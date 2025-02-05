@@ -1,18 +1,18 @@
 const p1 = new Promise((resolve,reject) => {
     setTimeout(() => {
-        reject("p1 failed");
+        resolve("p1 success");
     },3000)
 })
 const p2 = new Promise((resolve,reject) => {
     setTimeout(() => {
-        reject("p2 failed");
+        resolve("p2 Success");
     },2000)
 })
 
 
 const p3 = new Promise((resolve,reject) => {
     setTimeout(() => {
-        reject("p3 failed");
+        resolve("P3 Success")
     },1000)
 })
 
