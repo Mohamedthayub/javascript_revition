@@ -1,8 +1,20 @@
-let obj = {
-    a : 10,
-    x : function() {
-        console.log(this.a);
+
+let student  = {
+    name : "Thayub",
+    printName : function() {
+        console.log(this.name);
     }
 }
-obj.x();
+let student2 = {
+    name : "karthick",
+    printName : function (){
+        console.log(this.name);
+    }    
+}
+
+student.printName.call(student2); 
+
+
+
+
 
